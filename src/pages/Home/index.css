@@ -1,0 +1,144 @@
+.cardWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    overflow-y: scroll;
+    width: 95%;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+.trending {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.card {
+    scroll-snap-align: start;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 520px;
+    flex: 0 0 380px; 
+    margin: 10px;
+    cursor: pointer;
+}
+.cardd {
+    padding: 16px;
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.7), transparent);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    color: white; 
+    text-shadow: 0 0 4px black;
+}
+.bookmark {
+    background: rgb(16, 20, 30);
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px;
+    opacity: 0.5; /* Oval */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 400px;
+    margin-top: 0;
+}
+.cardWrapper .card {
+    background: grey;
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card:hover::before {
+    content: "Play";
+    margin: 0 auto;
+    margin-top: 20%;
+    padding: 10px;
+    padding-left: 33px;
+    color: blueviolet;
+    text-shadow: 0 0 2px blue;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    position: absolute;
+    width: 117px;
+    height: 48px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 28.5px;
+
+    background: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+.card .textWrapper {
+    position: relative;
+    width: 90%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    top: 100px;
+}
+.textWrapper .text {
+    opacity: 0.75;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.textWrapper .title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: -12px;
+    padding: 0;
+}
+.checkbox {
+    display: none;
+}
+label.bookmark {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.cards-wrapper {
+    width: 92%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 62px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
